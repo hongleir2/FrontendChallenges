@@ -21,10 +21,17 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      /* Global Reset */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
       html,
       body {
         height: 100%;
-        margin: 0;
       }
       body {
         font-family: "Figtree", sans-serif;
@@ -38,7 +45,6 @@
         width: 327px;
         height: 501px;
         padding: 24px;
-        box-sizing: border-box;
         background-color: #fff;
         border-radius: 20px;
         border: 1px solid #111111;
@@ -128,30 +134,32 @@
   </head>
   <body>
     <main>
-      <div class="blog-preview-card">
+      <article class="blog-preview-card" role="article">
         <img
           class="card-cover-img"
           src="assets/images/illustration-article.svg"
-          alt="article illustration"
+          alt="Illustration for HTML & CSS Foundations"
         />
         <div class="article-info-box">
-          <div class="article-tag">Learning</div>
-          <div class="article-publish-date">Published 21 Dec 2023</div>
-          <div class="article-title">HTML & CSS foundations</div>
-          <div class="article-desc">
+          <span class="article-tag">Learning</span>
+          <time class="article-publish-date" datetime="2023-12-21">
+            Published 21 Dec 2023
+          </time>
+          <h2 class="article-title">HTML & CSS foundations</h2>
+          <p class="article-desc">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
-          </div>
+          </p>
         </div>
         <div class="author-box">
           <img
             class="author-avatar"
             src="assets/images/image-avatar.webp"
-            alt="author avatar"
+            alt="Greg Hooper's avatar"
           />
-          <div class="author-name">Greg Hooper</div>
+          <span class="author-name">Greg Hooper</span>
         </div>
-      </div>
+      </article>
     </main>
   </body>
 </html>
