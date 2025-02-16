@@ -41,7 +41,7 @@
       }
       .text-preset-3 {
         font-family: "Montserrat", sans-serif;
-        font-weight: medium;
+        font-weight: 500;
         font-size: 14px;
         line-height: 160%;
       }
@@ -79,6 +79,7 @@
       }
       .card {
         width: 600px;
+        height: 456px;
         border-radius: 8px;
         display: flex;
         gap: 0;
@@ -107,6 +108,7 @@
         display: flex;
         gap: 16px;
         align-items: center;
+        line-height: 100%;
       }
       .card__content__button {
         background-color: var(--green-500);
@@ -128,6 +130,7 @@
       @media screen and (max-width: 767px) {
         .card {
           width: 350px;
+          height: 750px;
           flex-direction: column;
           border-radius: 8px;
         }
@@ -156,7 +159,10 @@
             <span class="text-preset-4" style="color: var(--grey)"
               >PERFUME</span
             >
-            <h1 class="text-preset-1" style="color: var(--black)">
+            <h1
+              class="text-preset-1"
+              style="color: var(--black); line-height: 100%"
+            >
               Gabrielle Essence Eau De Parfum
             </h1>
             <p class="text-preset-3" style="color: var(--grey)">
