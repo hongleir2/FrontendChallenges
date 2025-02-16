@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        font-family: "Figtree", sans-serif;
+        background-color: #f4d04e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .blog-preview-card {
+        width: 327px;
+        height: 501px;
+        padding: 24px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 20px;
+        border: 1px solid #111111;
+        box-shadow: 5px 5px #111111;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .card-cover-img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .article-info-box {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .article-tag {
+        width: fit-content;
+        background-color: #f4d04e;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 150%;
+        border-radius: 4px;
+        padding: 4px 12px;
+      }
+      .article-publish-date {
+        font-size: 12px;
+        font-weight: light;
+        color: #111111;
+        line-height: 150%;
+      }
+
+      .article-title {
+        font-size: 20px;
+        font-weight: 800;
+        color: #111111;
+        line-height: 150%;
+      }
+      .article-title:hover {
+        color: #f4d04e;
+      }
+      .article-desc {
+        font-weight: medium;
+        font-size: 14px;
+        color: #6b6b6b;
+        line-height: 150%;
+      }
+
+      .author-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .author-avatar {
+        width: 32px;
+        height: 32px;
+        border: 100%;
+      }
+      .author-name {
+        font-size: 14px;
+        font-weight: medium;
+        line-height: 150%;
+      }
+
+      @media screen and (min-width: 376px) {
+        .blog-preview-card {
+          width: 384px;
+          height: 522px;
+        }
+        .article-tag {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .article-publish-date {
+          font-size: 14px;
+        }
+        .article-title {
+          font-size: 24px;
+        }
+        .article-desc {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="blog-preview-card">
+        <img
+          class="card-cover-img"
+          src="assets/images/illustration-article.svg"
+          alt="article illustration"
+        />
+        <div class="article-info-box">
+          <div class="article-tag">Learning</div>
+          <div class="article-publish-date">Published 21 Dec 2023</div>
+          <div class="article-title">HTML & CSS foundations</div>
+          <div class="article-desc">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </div>
+        </div>
+        <author class="author-box">
+          <img
+            class="author-avatar"
+            src="assets/images/image-avatar.webp"
+            alt="author avatar"
+          />
+          <div class="author-name">Greg Hooper</div>
+        </author>
+      </div>
+    </main>
+  </body>
+</html>
